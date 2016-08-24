@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Prosto</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
 			<div class="container">
 				<!-- header logo -->
 				<div class="header__logo">
-					<div class="header__logo-img"></div>
+					<a href="#" class="header__logo-link"><img src="img/header-logo.png" width="273" height="100" alt="Логотип" class="header__logo-img"></a>
 					<div class="header__logo-name">Название компании</div>
 					<div class="header__logo-subname">самая клевая компания</div>
 				</div>
@@ -35,10 +36,10 @@
 					<!-- menu list -->
 					<ul class="menu-list">
 						<li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">Доставка и оплата</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">Прайс-лист</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+						<li class="menu-item"><span class="menu-item-line">| </span><a href="#" class="menu-link">Каталог</a></li>
+						<li class="menu-item menu-not-space"><span class="menu-item-line">| </span><a href="#" class="menu-link">Доставка и оплата</a></li>
+						<li class="menu-item"><span class="menu-item-line">| </span><a href="#" class="menu-link">Прайс-лист</a></li>
+						<li class="menu-item"><span class="menu-item-line">| </span><a href="#" class="menu-link">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
@@ -178,6 +179,33 @@
 			</div>
 		</div>
 		<!-- END CONTENT -->
+		
+		<!-- FEEDBACK -->
+		<div class="feedback">
+			<div class="feedback__header">обратная связь</div>
+			<form action="" class="feedback__form">
+				<div class="form-input-block">
+					<label for="" class="form-label">Ваше имя *</label>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form-input-block">
+					<label for="" class="form-label">Телефон *</label>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form-input-block">
+					<label for="" class="form-label">Email *</label>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form-input-block">
+					<label for="" class="form-label">Сообщение</label>
+					<textarea type="text" class="form-input form-textarea"></textarea>
+				</div>
+				<div class="form-submit">
+					<button class="form-button">отправить</button>
+				</div>
+			</form>
+		</div>
+		<!-- END FEEDBACK -->
 
 		<!-- FOOTER -->
 		<footer>
@@ -216,28 +244,6 @@
 		</footer>
 		<!-- END FOOTER -->
 
-		<!-- FEEDBACK -->
-		<div class="feedback">
-			<div class="feedback__header">обратная связь</div>
-			<form action="" class="feedback__form">
-				<div class="form-input-block">
-					<label for="" class="form-label">Ваше имя *</label>
-					<input type="text" class="form-input"></div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Телефон *</label>
-					<input type="text" class="form-input"></div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Email *</label>
-					<input type="text" class="form-input"></div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Сообщение</label>
-					<textarea type="text" class="form-input form-textarea"></div>
-				<div class="form-submit">
-					<button class="form-button">отправить</button>
-				</div>
-			</form>
-		</div>
-		<!-- END FEEDBACK -->
 	</div>
 <script src="js/script.js"></script>
 </body>
