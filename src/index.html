@@ -19,8 +19,8 @@
 				</div>
 				<!-- header phone callback -->
 				<div class="header__callback">
-					<div class="header__callback-phone">+7(499)777-77-77</div>
-					<div class="header__callback-phone">+7(499)777-77-77</div>
+					<div class="header__callback-phone">+7(499) 777-77-77</div>
+					<div class="header__callback-phone">+7(499) 777-77-77</div>
 					<div class="header__callback-text">
 						<a href="#" class="header__callback-link">Обратная связь</a>
 					</div>
@@ -45,7 +45,32 @@
 			</div>
 		</nav>
 		<!-- END NAVIGATION -->
-
+		<!-- FEEDBACK -->
+			<div class="feedback">
+				<div class="feedback__header">обратная связь</div>
+				<form action="" class="feedback__form">
+					<div class="form-input-block">
+						<label for="" class="form-label">Ваше имя *</label>
+						<input type="text" class="form-input">
+					</div>
+					<div class="form-input-block">
+						<label for="" class="form-label">Телефон *</label>
+						<input type="text" class="form-input">
+					</div>
+					<div class="form-input-block">
+						<label for="" class="form-label">Email *</label>
+						<input type="text" class="form-input">
+					</div>
+					<div class="form-input-block">
+						<label for="" class="form-label">Сообщение</label>
+						<textarea type="text" class="form-input form-textarea"></textarea>
+					</div>
+					<div class="form-submit">
+						<button class="form-button">отправить</button>
+					</div>
+				</form>
+			</div>
+		<!-- END FEEDBACK -->
 		<!-- SLIDER -->
 		<div class="slide">
 			<!-- slider -->
@@ -54,125 +79,131 @@
 
 		<!-- CONTENT -->
 		<div class="content">
-			<div class="container">
+			<div class="container container-content">
 				<!-- location bar -->
-				<div class="location">Главная / Каталог / Бытовая техника</div>
-				<div class="content-wrap">
-					<!-- sidebar block -->
-					<a-side class="content-sidebar">
-						<!-- sidebar menu -->
-						<div class="sidebar__menu">
-							<ul class="sidebar__menu-list">
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Автомобили</a>
+				<div class="location">
+					<a href="#" class="location-link">Главная</a>
+					<span class="location-line">/</span>
+					<a href="#" class="location-link">Каталог</a>
+					<span class="location-line">/</span>
+					<a href="#" class="location-link location-link-bit">Бытовая техника</a>
+				</div>
+				<div class="content-wrap clearfix">
+					<!-- leftblock block -->
+					<a-side class="leftblock">
+						<!-- leftblock menu -->
+						<div class="leftblock__menu">
+							<ul class="leftblock__menu-list">
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Автомобили</a>
 								</li>
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Бытовая техника</a>
-									<!-- sidebar bitov tehnik sub-menu -->
-									<div class="sidebar__menu-drop">
-										<ul class="sidebar__menu-drop-list">
-											<li class="sidebar__menu-drop-item">
-												<a href="#" class="sidebar__menu-drop-link">Микроволновки</a>
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Бытовая техника</a>
+									<!-- leftblock bitov tehnik sub-menu -->
+									<div class="leftblock__menu-drop">
+										<ul class="leftblock__menu-drop-list">
+											<li class="leftblock__menu-drop-item">
+												<a href="#" class="leftblock__menu-drop-link">Микроволновки</a>
 											</li>
-											<li class="sidebar__menu-drop-item">
-												<a href="#" class="sidebar__menu-drop-link">Холодильники</a></li>
-											<li class="sidebar__menu-drop-item">
-												<a href="#" class="sidebar__menu-drop-link">Посудомоечные машины</a></li>
-											<li class="sidebar__menu-drop-item">
-												<a href="#" class="sidebar__menu-drop-link">Чайники</a></li>
+											<li class="leftblock__menu-drop-item">
+												<a href="#" class="leftblock__menu-drop-link">Холодильники</a></li>
+											<li class="leftblock__menu-drop-item">
+												<a href="#" class="leftblock__menu-drop-link">Посудомоечные машины</a></li>
+											<li class="leftblock__menu-drop-item">
+												<a href="#" class="leftblock__menu-drop-link">Чайники</a></li>
 										</ul>
 									</div>
 								</li>
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Мобильная техника</a>
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Мобильная техника</a>
 								</li>
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Компьютеры</a>
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Компьютеры</a>
 								</li>
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Одежда</a>
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Одежда</a>
 								</li>
-								<li class="sidebar__menu-item">
-									<a href="#" class="sidebar__menu-link">Недвижимость</a>
+								<li class="leftblock__menu-item">
+									<a href="#" class="leftblock__menu-link">Недвижимость</a>
 								</li>
 							</ul>
 						</div>
-						<!-- sidebar price -->
-						<div class="sidebar__pricelist">
-							<a href="#" class="sidebar__pricelist-link">
-								<img src="#" alt="" class="sidebar__pricelist-img">
+						<!-- leftblock price -->
+						<div class="leftblock__pricelist">
+							<a href="#" class="leftblock__pricelist-link">
+								<img src="img/exel.png" alt="Download price" class="leftblock__pricelist-img">
+								<p class="leftblock__pricelist-text">Прайс-лист</p>
 							</a>
-							<div class="sidebar__pricelist-text">Прайс-лист</div>
 						</div>
 					</a-side>
-					<!-- catalog block -->
-					<div class="content-catalog">
-						<!-- catalog products -->
-						<div class="catalog__products">
+					<!-- centerblock block -->
+					<div class="centerblock">
+						<!-- centerblock products -->
+						<div class="centerblock__products clearfix">
 							<!-- 1th item -->
-							<div class="catalog__item">
-								<div class="catalog__item-img"></div>
-								<div class="catalog__item-text">Самый клевый чайник, который надо купить!</div>
-								<div class="catalog__item-price">
-									<div class="catalog__item-value">1900 р.</div>
-									<a href="#" class="catalog__item-basket"></a>
+							<div class="centerblock__item">
+								<img src="img/nophoto.jpg" width="210" height="210" alt="1th item" class="centerblock__item-img">
+								<div class="centerblock__item-text">Самый клевый чайник, который надо купить!</div>
+								<div class="centerblock__item-price">
+									<div class="centerblock__item-value"><strong>1 900 р.</strong></div>
+									<a href="#" class="centerblock__item-basket"></a>
 								</div>
 							</div>
 							<!-- 2th item -->
-							<div class="catalog__item">
-								<div class="catalog__item-img"></div>
-								<div class="catalog__item-text">Самый клевый чайник, который надо купить!</div>
-								<div class="catalog__item-price">
-									<div class="catalog__item-value">1900 р.</div>
-									<a href="#" class="catalog__item-basket"></a>
+							<div class="centerblock__item">
+								<img src="img/nophoto.jpg" width="210" height="210" alt="2th item" class="centerblock__item-img">
+								<div class="centerblock__item-text">Самый клевый чайник, который надо купить!</div>
+								<div class="centerblock__item-price">
+									<div class="centerblock__item-value"><strong>1 900 р.</strong></div>
+									<a href="#" class="centerblock__item-basket"></a>
 								</div>
 							</div>
 							<!-- 3th item -->
-							<div class="catalog__item">
-								<div class="catalog__item-img"></div>
-								<div class="catalog__item-text">Самый клевый чайник, который надо купить!</div>
-								<div class="catalog__item-price">
-									<div class="catalog__item-value">1900 р.</div>
-									<a href="#" class="catalog__item-basket"></a>
+							<div class="centerblock__item">
+								<img src="img/nophoto.jpg" width="210" height="210" alt="3th item" class="centerblock__item-img">
+								<div class="centerblock__item-text">Самый клевый чайник, который надо купить!</div>
+								<div class="centerblock__item-price">
+									<div class="centerblock__item-value"><strong>1 900 р.</strong></div>
+									<a href="#" class="centerblock__item-basket"></a>
 								</div>
 							</div>
 							<!-- 4th item -->
-							<div class="catalog__item">
-								<div class="catalog__item-img"></div>
-								<div class="catalog__item-text">Самый клевый чайник, который надо купить!</div>
-								<div class="catalog__item-price">
-									<div class="catalog__item-value">1900 р.</div>
-									<a href="#" class="catalog__item-basket"></a>
+							<div class="centerblock__item">
+								<img src="img/nophoto.jpg" width="210" height="210" alt="4th item" class="centerblock__item-img">
+								<div class="centerblock__item-text">Самый клевый чайник, который надо купить!</div>
+								<div class="centerblock__item-price">
+									<div class="centerblock__item-value"><strong>1 900 р.</strong></div>
+									<a href="#" class="centerblock__item-basket"></a>
 								</div>
 							</div>
 							<!-- 5th item -->
-							<div class="catalog__item">
-								<div class="catalog__item-img"></div>
-								<div class="catalog__item-text">Самый клевый чайник, который надо купить!</div>
-								<div class="catalog__item-price">
-									<div class="catalog__item-value">1900 р.</div>
-									<a href="#" class="catalog__item-basket"></a>
+							<div class="centerblock__item">
+								<img src="img/nophoto.jpg" width="210" height="210" alt="5th item" class="centerblock__item-img">
+								<div class="centerblock__item-text">Самый клевый чайник, который надо купить!</div>
+								<div class="centerblock__item-price">
+									<div class="centerblock__item-value"><strong>1 900 р.</strong></div>
+									<a href="#" class="centerblock__item-basket"></a>
 								</div>
 							</div>
 						</div>
-						<!-- catalog location bar -->
-						<div class="catalog__loc">
-							<div class="catalog__loc-menu">
-								<ul class="catalog__loc-list">
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">1</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">2</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">3</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">4</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">5</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">6</a></li>
-									<li class="catalog__loc-item"><a href="#" class="catalog__loc-link">7</a></li>
+						<!-- centerblock location bar -->
+						<div class="centerblock__loc">
+							<div class="centerblock__loc-menu">
+								<ul class="centerblock__loc-list">
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">1</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">2</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">3</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">4</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">5</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">6</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">7</a></li>
 								</ul>
 							</div>
 						</div>
-						<!-- catalog information -->
-						<div class="catalog__info">
-							<article class="catalog__article-1">Агентство инновационного маркетинга «Простые решения» работает с 2011 года. Наши заказчики ведут свой бизнес в различных регионах России и странах СНГ.Раньше новых клиентов мы получали исключительно в результате холодных звонков. Сейчас у нас за плечами большой опыт продвижения сайтов и компаний в интернете в каких-то отдельных регионах и по всей России.</article>
-							<article class="catalog__article-2">Сейчас рынок интернет-маркетинга претерпевает определенные изменения. Поэтому, наши услуги призваны решать задачи заказчиков и достигать поставленных целей.Это действительно так, мы работаем с вашим сайтом таким образом, чтобы он приносил вам денег, чтобы росли продажи, чтобы вы опередили своих конкурентов по все показателям.</article>
+						<!-- centerblock information -->
+						<div class="centerblock__info">
+							<article class="centerblock__article-1">Агентство инновационного маркетинга «Простые решения» работает с 2011 года. Наши заказчики ведут свой бизнес в различных регионах России и странах СНГ.Раньше новых клиентов мы получали исключительно в результате холодных звонков. Сейчас у нас за плечами большой опыт продвижения сайтов и компаний в интернете в каких-то отдельных регионах и по всей России.</article>
+							<article class="centerblock__article-2">Сейчас рынок интернет-маркетинга претерпевает определенные изменения. Поэтому, наши услуги призваны решать задачи заказчиков и достигать поставленных целей. <br>Это действительно так, мы работаем с вашим сайтом таким образом, чтобы он приносил вам денег, чтобы росли продажи, чтобы вы опередили своих конкурентов по все показателям.</article>
 						</div>
 					</div>
 				</div>
@@ -208,42 +239,42 @@
 		<!-- END FEEDBACK -->
 
 		<!-- FOOTER -->
-		<footer>
+		<footer class="clearfix">
 			<div class="container">
 				<!-- footer law -->
 				<div class="footer__law">
-					<div class="footer__law-name">@ 2012-2013 ЗАО "Компания"</div>
+					<div class="footer__law-name">@ 2012-2013 ЗАО &laquo;Компания&raquo;</div>
 					<div class="footer__law-mail">info@name.ru</div>
 				</div>
 				<!-- footer menu -->
 				<div class="footer__menu">
 					<ul class="footer__menu-list">
 						<li class="footer__menu-item">
-							<a class="footer__menu-link">Главная</a>
+							<a href="#" class="footer__menu-link">Главная</a>
 						</li>
 						<li class="footer__menu-item">
-							<a class="footer__menu-link">Каталог</a>
+							<a href="#" class="footer__menu-link">Каталог</a>
 						</li>
 						<li class="footer__menu-item">
-							<a class="footer__menu-link">Доставка и оплата</a>
+							<a href="#" class="footer__menu-link">Доставка и оплата</a>
 						</li>
 						<li class="footer__menu-item">
-							<a class="footer__menu-link">Прайс-лист</a>
+							<a href="#" class="footer__menu-link">Прайс-лист</a>
 						</li>
 						<li class="footer__menu-item">
-							<a class="footer__menu-link">Контакты</a>
+							<a href="#" class="footer__menu-link">Контакты</a>
 						</li>
 					</ul>
 				</div>
 				<!-- footer logo -->
-				<div class="footer__logo">
-					<div class="footer__logo-img"></div>
-					<div class="footer__logo-text">"Разработка сайта" - компания "Простые решения"</div>
-				</div>
+				<a href="http://ima-pr.ru/" class="footer__logo clearfix">
+					<img src="img/footer-logo.png" width="62" height="41" class="footer__logo-img">
+					<div class="footer__logo-text"><span class="footer__logo-subtext">Разработка сайта</span> - <br>компания &laquo;Простые решения&raquo;</div>
+				</a>
 			</div>
 		</footer>
 		<!-- END FOOTER -->
-
+		
 	</div>
 <script src="js/script.js"></script>
 </body>
