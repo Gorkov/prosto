@@ -5,6 +5,8 @@
 	<title>Prosto</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="page">
@@ -22,7 +24,7 @@
 					<div class="header__callback-phone">+7(499) 777-77-77</div>
 					<div class="header__callback-phone">+7(499) 777-77-77</div>
 					<div class="header__callback-text">
-						<a href="#" class="header__callback-link">Обратная связь</a>
+						<a href="javascript:PopUpShow()" class="header__callback-link">Обратная связь</a>
 					</div>
 				</div>
 			</div>
@@ -45,32 +47,7 @@
 			</div>
 		</nav>
 		<!-- END NAVIGATION -->
-		<!-- FEEDBACK -->
-			<div class="feedback">
-				<div class="feedback__header">обратная связь</div>
-				<form action="" class="feedback__form">
-					<div class="form-input-block">
-						<label for="" class="form-label">Ваше имя *</label>
-						<input type="text" class="form-input">
-					</div>
-					<div class="form-input-block">
-						<label for="" class="form-label">Телефон *</label>
-						<input type="text" class="form-input">
-					</div>
-					<div class="form-input-block">
-						<label for="" class="form-label">Email *</label>
-						<input type="text" class="form-input">
-					</div>
-					<div class="form-input-block">
-						<label for="" class="form-label">Сообщение</label>
-						<textarea type="text" class="form-input form-textarea"></textarea>
-					</div>
-					<div class="form-submit">
-						<button class="form-button">отправить</button>
-					</div>
-				</form>
-			</div>
-		<!-- END FEEDBACK -->
+		
 		<!-- SLIDER -->
 		<div class="slide">
 			<!-- slider -->
@@ -86,7 +63,7 @@
 					<span class="location-line">/</span>
 					<a href="#" class="location-link">Каталог</a>
 					<span class="location-line">/</span>
-					<a href="#" class="location-link location-link-bit">Бытовая техника</a>
+					<a href="#" class="location-link location-link-bit location-active">Бытовая техника</a>
 				</div>
 				<div class="content-wrap clearfix">
 					<!-- leftblock block -->
@@ -98,12 +75,12 @@
 									<a href="#" class="leftblock__menu-link">Автомобили</a>
 								</li>
 								<li class="leftblock__menu-item">
-									<a href="#" class="leftblock__menu-link">Бытовая техника</a>
+									<a href="#" class="leftblock__menu-link leftblock__menu-link-active">Бытовая техника</a>
 									<!-- leftblock bitov tehnik sub-menu -->
 									<div class="leftblock__menu-drop">
 										<ul class="leftblock__menu-drop-list">
 											<li class="leftblock__menu-drop-item">
-												<a href="#" class="leftblock__menu-drop-link">Микроволновки</a>
+												<a href="#" class="leftblock__menu-drop-link leftblock__menu-drop-link-active">Микроволновки</a>
 											</li>
 											<li class="leftblock__menu-drop-item">
 												<a href="#" class="leftblock__menu-drop-link">Холодильники</a></li>
@@ -192,7 +169,7 @@
 								<ul class="centerblock__loc-list">
 									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">1</a></li>
 									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">2</a></li>
-									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">3</a></li>
+									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link centerblock__loc-active">3</a></li>
 									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">4</a></li>
 									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">5</a></li>
 									<li class="centerblock__loc-item"><a href="#" class="centerblock__loc-link">6</a></li>
@@ -210,33 +187,6 @@
 			</div>
 		</div>
 		<!-- END CONTENT -->
-		
-		<!-- FEEDBACK -->
-		<div class="feedback">
-			<div class="feedback__header">обратная связь</div>
-			<form action="" class="feedback__form">
-				<div class="form-input-block">
-					<label for="" class="form-label">Ваше имя *</label>
-					<input type="text" class="form-input">
-				</div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Телефон *</label>
-					<input type="text" class="form-input">
-				</div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Email *</label>
-					<input type="text" class="form-input">
-				</div>
-				<div class="form-input-block">
-					<label for="" class="form-label">Сообщение</label>
-					<textarea type="text" class="form-input form-textarea"></textarea>
-				</div>
-				<div class="form-submit">
-					<button class="form-button">отправить</button>
-				</div>
-			</form>
-		</div>
-		<!-- END FEEDBACK -->
 
 		<!-- FOOTER -->
 		<footer class="clearfix">
@@ -274,8 +224,37 @@
 			</div>
 		</footer>
 		<!-- END FOOTER -->
-		
+		<!-- FEEDBACK -->
+			<div class="feedback" id="popup1">
+				<div class="feedback-wrap">
+					<a href="javascript:PopUpHide()" class="feedback__close"></a>
+					<div class="feedback__header">обратная связь</div>
+					<form action="" class="feedback__form">
+						<div class="form-input-block">
+							<label for="" class="form-label">Ваше имя *</label>
+							<input type="text" class="form-input">
+						</div>
+						<div class="form-input-block">
+							<label for="" class="form-label">Телефон *</label>
+							<input type="text" class="form-input">
+						</div>
+						<div class="form-input-block">
+							<label for="" class="form-label">Email *</label>
+							<input type="text" class="form-input">
+						</div>
+						<div class="form-input-block">
+							<label for="" class="form-label">Сообщение</label>
+							<textarea type="text" class="form-input form-textarea"></textarea>
+						</div>
+						<div class="form-submit">
+							<button class="form-button">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		<!-- END FEEDBACK -->
 	</div>
-<script src="js/script.js"></script>
+	
+
 </body>
 </html>

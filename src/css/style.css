@@ -49,7 +49,7 @@ a {
  /* GLOBAL */
  body {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 22px;
 	height: 100%;
 	width: 100%;
@@ -173,8 +173,7 @@ nav {
 /* CONTENT */
 .content {
 	color: #767676;
-	padding-bottom: 220px;
-	margin-bottom: 113px;
+	padding-bottom: 220px;;
 }
 .location {
 	height: 46px;
@@ -186,10 +185,14 @@ nav {
 	font-size: 13px;
 	text-decoration: underline; 
 }
+.location-active {
+	text-decoration: none;
+}
 .location-link-bit {
 	word-spacing: normal; 
 }
 .content-wrap {
+	margin-bottom: 113px;
 
 }
 /* leftblock block */
@@ -213,6 +216,9 @@ nav {
 .leftblock__menu-link {
 	font-size: 17px;
 }
+.leftblock__menu-link-active {
+	text-decoration: underline;
+}
 /* leftblock sub-menu */
 .leftblock__menu-drop {
 	margin-left: 3px;
@@ -226,6 +232,11 @@ nav {
 }
 .leftblock__menu-drop-link {
 	font-size: 13px;
+}
+.leftblock__menu-drop-link-active {
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
 }
 /* leftblock price */
 .leftblock__pricelist {
@@ -247,7 +258,7 @@ nav {
 /* centerblock */
 .centerblock {
 	width: 800px;
-	margin-left: 200px;
+	margin-left: 200px;;
 }
 /* centerblock products */
 .centerblock__products {
@@ -319,6 +330,9 @@ nav {
 .centerblock__loc-link {
 
 }
+.centerblock__loc-active {
+	font-size: 18px;
+}
 /* centerblock information */
 .centerblock__info {
 	border-top: 1px solid #767676;
@@ -338,34 +352,87 @@ nav {
 
 /* FEEDBACK */
 .feedback {
-	visibility: hidden;
+	/*display: none;*/
+	width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  padding-top: 284px;
+	padding-bottom:280px;
+}
+.feedback-wrap {
+	position: relative;
+	margin: 0 auto;
+	height: 580px;
+	width: 465px;
+	background: #DCDCDC;
+	padding-top: 33px;
+	color: #535353;
+}
+.feedback__close {
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background: url(../img/close.png);
+	color: white;
+	top: -27px;
+	right: -27px;
 }
 .feedback__header {
-
+	font-family: 'PT Sans';
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 27px;
 }
 .feedback__form {
-
+	font-family: 'PT Sans';
+	font-size: 14px;
+	width: 340px;
+	margin: 0 auto;
 }
 .form-input-block {
-
+	text-align: center;
+	margin-bottom: 17px;
 }
 .form-label {
-
+	display: block;
 }
 .form-input {
-
+	width: 100%;
+	height: 42px;
 }
-.form-input-block {
-
+.form-input:focus {
+	border: 1px solid #777777;
+	outline: none;
 }
 .form-textarea {
-
+	height: 140px;
 }
 .form-submit {
-
+	text-align: center;
 }
 .form-button {
-
+	width: 130px;
+	height: 40px;
+	color: white;
+	background: #777777;
+	font-family: 'PT Sans';
+	font-weight: bold;
+	font-size: 17.77px;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+.invalide{
+	border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 131, 131);
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
 }
 /* END FEEDBACK */
 
@@ -396,7 +463,7 @@ footer {
 	font-size: 13px;
 	float: left;
 	width: 150px;
-	margin-left: 113px;;
+	margin-left: 113px;
 }
 .footer__menu-list {
 
@@ -437,4 +504,93 @@ footer {
 	clear:both;
 }
 /* END CUSTOM */
+/*.feedback {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 2315px;
+  z-index: 107;
+}
+.Заголовок {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 2315px;
+  z-index: 106;
+}
+.Обратная_связь {
+  font-size: 24px;
+  font-family: "PT Sans";
+  color: rgb(83, 83, 83);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 615.094px;
+  top: 313.1px;
+  z-index: 105;
+}
+.форма {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 2315px;
+  z-index: 103;
+}
+.Rectangle_7_copy_3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(195, 195, 195);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 542px;
+  top: 629px;
+  width: 343px;
+  height: 144px;
+  z-index: 102;
+}
+.Сообщение {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(83, 83, 83);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 678px;
+  top: 609.7px;
+  z-index: 101;
+}
+.Поле_обязательно_для_заполнения {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(220, 127, 127);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 557px;
+  top: 561.366px;
+  width: 206px;
+  height: 11px;
+  z-index: 100;
+}
+.Слой_18 {
+
+.Rectangle_7_copy_2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 131, 131);
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
+  position: absolute;
+  left: 545px;
+  top: 550px;
+  width: 337px;
+  height: 38px;
+  z-index: 98;
+}*/
 
