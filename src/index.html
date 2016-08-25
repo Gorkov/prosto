@@ -5,8 +5,6 @@
 	<title>Prosto</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="page">
@@ -50,7 +48,17 @@
 		
 		<!-- SLIDER -->
 		<div class="slide">
-			<!-- slider -->
+			<div id="slider-wrap">
+  				<div id="slider">
+  					<div class="slide__control"></div>
+	    			<div class="slide__item" style="position: absolute; top: 0px; left: 0px; display: none">
+	      				<img src="img/slide-1.jpg" class="slide__img">
+    				</div>
+				    <div class="slide__item" style="position: absolute; top: 0px; left: 0px; display: none">
+				      <img src="img/slide-2.jpg" class="slide__img">
+				    </div>
+	  			</div>
+			</div>
 		</div>
 		<!-- END SLIDER -->
 
@@ -105,6 +113,7 @@
 								</li>
 							</ul>
 						</div>
+						
 						<!-- leftblock price -->
 						<div class="leftblock__pricelist">
 							<a href="#" class="leftblock__pricelist-link">
@@ -255,6 +264,7 @@
 		<!-- END FEEDBACK -->
 	</div>
 	
-
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
