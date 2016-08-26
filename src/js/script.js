@@ -18,21 +18,18 @@ function PopUpHide(){
 //Функция валидации
 function Validate(ev) {
     ev.preventDefault();
-    var $this = $(this),
-        container = $this.closest('#popup1'),
+    var container = $(this).closest('#popup1'),
         input = container.find('.form-input'),
         invalide = container.filter('.invalide');
-        allInput = container.filter('.form-input');
 
         input.each(function() {
             if ($(this).val() == '') {
                 $(this).addClass('invalide');
                 $(this).attr('placeholder','Поле обязательно для заполнения');
-               // работаем
             } else if ($(this).val() !== '') {
                 $(this).removeClass('invalide').attr('placeholder','');
+                //отправляем на сервер
             }
-            
         });
 }
 //Функция работы слайдера
